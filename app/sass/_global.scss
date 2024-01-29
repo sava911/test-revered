@@ -1,9 +1,8 @@
 html,
 body {
   box-sizing: border-box;
-  height: 100%;
-}
 
+}
 
 *,
 *::before,
@@ -17,7 +16,6 @@ body {
   transition: all 0.3s;
 }
 
-
 h1,
 h2,
 h3,
@@ -27,16 +25,13 @@ h6 {
   margin: 0;
   color: inherit;
   font-weight: normal;
-
 }
-
 
 a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
 }
-
 
 ul,
 li,
@@ -79,40 +74,30 @@ button {
   border: none;
   font: inherit;
   color: inherit;
-  background-color: transparent
+  background-color: transparent;
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
-  line-height: 24px;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
   font-weight: 400;
-  font-size: 16px;
-  // letter-spacing: 0.24em;
-  // color: $black;
+  line-height: 17px;
+  // letter-spacing: 0.1px;
+  color: #fff;
 
-  // background: $wh;
-  display: flex;
-  flex-direction: column;
+  background: linear-gradient(153.11deg, #36603E 35.82%, #1E262C 107.75%);
 
-}
-
-
-
-main {
-  flex-grow: 1;
+  // display: flex;
+  // flex-direction: column;
 
 }
+
+// main {
+//   flex-grow: 1;
+// }
 
 .container {
-  padding: 0 30px;
-  max-width: 1430px;
+  padding: 0 15px;
+  max-width: 1230px;
   margin: 0 auto;
 }
-
-// .fixed {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   z-index: 999;
-// }

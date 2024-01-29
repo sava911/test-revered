@@ -1,0 +1,266 @@
+.pricing {
+  position: relative;
+  // height: 100vh;
+  margin-bottom: 100px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url('../images/Vector383.png');
+    width: 1302px;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    left: 32px;
+    right: 0;
+    top: 40px;
+    z-index: inherit;
+  }
+
+
+
+  &__inner {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/Vector385.png');
+      width: 302px;
+      height: 400px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      right: -70px;
+      top: 0;
+
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../images/Vector384.png');
+      width: 316px;
+      height: 400px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: -36px;
+      top: 8px;
+
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 42px;
+    padding-top: 26px;
+    margin-left: 26px;
+
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    padding-left: 53px;
+    gap: 300px;
+    // padding: 80px 88px 0 140px;
+    position: relative;
+  }
+
+
+
+  &__item {
+    z-index: 2;
+    background: #6A994E;
+    width: 330px;
+    border-radius: 12px;
+    display: flex;
+
+    flex-direction: column;
+
+    &:nth-child(2) {
+      z-index: 3;
+      position: absolute;
+      background: #1D252B;
+
+      width: 336px;
+      top: 50px;
+      margin: 0 auto;
+      left: 53px;
+      right: 0;
+
+      .pricing__item--top {
+        padding-top: 45px;
+        padding-left: 64px;
+      }
+
+      .pricing__item--list {
+
+
+
+
+        li:nth-last-child(n+4) {
+          color: #FFFFFFCC;
+
+        }
+      }
+
+      .pricing__item--btn {
+        border: none;
+        background-color: #BC4749;
+        position: relative;
+        padding-right: 45px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          background-image: url('../images/arrow-btn.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 20px;
+          height: 20px;
+
+          right: 55px;
+          top: 10px;
+
+        }
+
+
+        &:hover {
+          background-color: #fff;
+          color: #000;
+        }
+
+      }
+    }
+
+    &:nth-child(3) {
+      .pricing__item--top {
+        padding-top: 35px;
+        padding-left: 63px;
+      }
+
+
+
+      .pricing__item--list {
+
+
+
+
+        li:nth-last-child(n+3) {
+          color: #FFFFFFCC;
+
+        }
+      }
+    }
+  }
+
+  &__item--top {
+    border-bottom: 1px solid #FFFFFF1A;
+
+    padding: 35px 60px 0px 60px;
+  }
+
+  &__item--title {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  &__item--sale {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    border-bottom: 1px solid #FFFFFF1A;
+
+
+    span:nth-child(1) {
+      vertical-align: 25px;
+      cursor: pointer;
+    }
+
+    span:nth-child(2) {
+      font-size: 38px;
+      font-weight: 800;
+    }
+
+    span:nth-child(3) {
+      cursor: pointer;
+      position: relative;
+      padding-left: 5px;
+
+      &::before {
+        position: absolute;
+        content: '/';
+        bottom: 0;
+        left: 0px;
+      }
+    }
+  }
+
+  &__item--text {
+    color: #FFFFFFCC;
+    margin-bottom: 27px;
+  }
+
+  &__item--bottom {
+    padding: 20px 60px 20px 60px;
+
+
+
+  }
+
+  &__item--name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 24px;
+
+
+    span {
+      padding-top: 10px;
+      display: block;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+
+  &__item--list {
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    li::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/li.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 10px;
+      height: 10px;
+      left: -20px;
+      top: 5px;
+    }
+
+
+  }
+
+  &__item--btn {
+    border: 1px solid #D0D0D0;
+    padding: 12px 22px;
+    width: 214px;
+    font-weight: 500;
+    border-radius: 7px;
+    margin: 20px auto;
+    margin-top: auto;
+
+
+    &:hover {
+      background-color: #D66567;
+    }
+  }
+}
