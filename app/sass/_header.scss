@@ -72,5 +72,18 @@
 }
 
 .burger-list {
-  display: none;
+  position: absolute;
+  z-index: 9;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  height: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  padding-top: 20px;
+  transition: all 0.3s ease-in-out;
+
 }

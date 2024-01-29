@@ -35,7 +35,7 @@
 
     overflow: visible;
     position: relative;
-    z-index: 2;
+    z-index: 10;
   }
 
   .burger-menu span,
@@ -73,6 +73,7 @@
   }
 
   .burger-menu.close span {
+
     transform: rotate(-45deg);
     top: 13px;
     width: 27px;
@@ -92,27 +93,12 @@
     width: 0;
   }
 
-  .burger-list {
-    z-index: 1;
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;
-    top: 0;
-    height: 0;
-    left: 0;
-    visibility: hidden;
-    opacity: 0;
-    text-align: center;
-    padding-top: 20px;
-    transition: all 0.3s ease-in-out;
-
-  }
 
   .burger-list.overlay {
     visibility: visible;
     opacity: 1;
     padding-top: 100px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
   }
 
 
