@@ -70,3 +70,7 @@
 .list-hover:hover>li:not(:hover) {
   opacity: .5;
 }
+
+.burger-list {
+  display: none;
+}
